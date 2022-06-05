@@ -1,7 +1,5 @@
+import MidPage from "../components/MidPage";
+
 export default function Home() {
-  return (
-    <div>
-      <h1>Welcome to Indian Coders</h1>
-    </div>
-  );
+  return <MidPage />;
 }
