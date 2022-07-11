@@ -1,5 +1,6 @@
 import MidPage from "../components/MidPage";
 import Head from "next/head";
+import Cards from "../components/Cards";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
           content="Welcome to Indian Coders, Platform to Learn Coding and Programming with in depth courses"
         />
       </Head>
-      <MidPage />
+      <Cards />
     </>
   );
 }
