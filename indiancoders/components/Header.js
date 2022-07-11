@@ -7,7 +7,6 @@ const links = ["Courses", "Join Us"];
 const labelSx = { fontWeight: "bold", fontFamily: "sans-serif" };
 
 const Header = () => {
-  const [tabVal, setTabVal] = useState();
   return (
     <AppBar
       position="sticky"
@@ -26,8 +25,8 @@ const Header = () => {
         </Box>
         <Box justifyContent={"center"} display="flex" marginLeft="auto">
           <Tabs textColor="white">
-            {links.map((link) => (
-              <Tab label={link} />
+            {links.map((link, index) => (
+              <Tab key={index} label={link} />
             ))}
           </Tabs>
         </Box>
